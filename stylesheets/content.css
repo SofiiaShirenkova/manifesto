@@ -1,24 +1,49 @@
 body {
-  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.main_icon{
+  position: absolute;
   display: flex;
-  align-items: center;
-  font-family: "Satoshi", sans-serif;
-  font-size: var(--lx-text-01);
-  font-weight: 500;
-  color: #ffffe6;
-  background-color: #10100e;
+  align-self: center;
+  margin-left: 48vw;
+  margin-top: -3.4vw;
+  z-index: 1000;
+}
+
+.what_icon{
+  position: absolute;
+  display: flex;
+  align-self: center;
+  margin-left: 2vw;
+  margin-top: -3.4vw;
+  z-index: 1000;
+}
+
+.place_icon{
+  position: absolute;
+  display: flex;
+  align-self: center;
+  margin-left: 96vw;
+  margin-top: -3.4vw;
+  z-index: 1000;
 }
 
 .carousel-container {
-  width: 56%;
+  width: 62%;
   margin: auto;
   margin-top: 8%;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--lx-gap);
+  z-index: 3;
+  margin-top: 5vw;
 
   .carousel {
+    margin-top: 3%;
     /* aspect-ratio: 16/9; */
     width: 100%;
     position: relative;
@@ -96,7 +121,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4%;
+    margin-top: 3%;
     gap: 14px;
 
     .dot {
