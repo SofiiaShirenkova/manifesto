@@ -4,6 +4,20 @@ body {
   background-color: black;
 }
 
+/* .menu_bar{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+} */
+
+.menu_bar {
+  display: flex;
+  flex-wrap: wrap;
+  height: 8vw;
+  align-content: space-between;
+  z-index: 1000;
+}
+
 .main_icon{
   position: absolute;
   display: flex;
@@ -34,16 +48,15 @@ body {
 .carousel-container {
   width: 62%;
   margin: auto;
-  margin-top: 8%;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--lx-gap);
   z-index: 3;
-  margin-top: 5vw;
+  margin-top: 4vw;
 
   .carousel {
-    margin-top: 3%;
+    margin-top: -9%;
     /* aspect-ratio: 16/9; */
     width: 100%;
     position: relative;
@@ -86,7 +99,7 @@ body {
     padding: 1em 2em;
     position: absolute;
     transform: translateY(-50%);
-    top: 50%;
+    top: 38%;
     outline: none;
     border: none;
     cursor: pointer;
@@ -121,7 +134,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 4%;
     gap: 14px;
 
     .dot {
