@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let items = carousel.querySelectorAll(".item");
     let dotsContainer = document.querySelector(".dots");
   
-    // Insert dots into the DOM
+    // внедряем нижние точечки в DOM
     items.forEach((_, index) => {
       let dot = document.createElement("span");
       dot.classList.add("dot");
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     let dots = document.querySelectorAll(".dot");
   
-    // Function to show a specific item
+    // функция отображения айтема
     function showItem(index) {
       items.forEach((item, idx) => {
         item.classList.remove("active");
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   
-    // Event listeners for buttons
+    // Event listeners для кнопок
     document.querySelector(".prev").addEventListener("click", () => {
       let index = [...items].findIndex((item) =>
         item.classList.contains("active")

@@ -14,9 +14,35 @@
 
     <div class="menu_bar">
     <img class="main_icon" src="img/main_w.svg">
-    <img class="what_icon" src="img/what_is_manifest.svg">
+    <img class="what_icon" src="img/what_is_manifest.svg" onclick="openPopup()">
     <img class="place_icon" src="img/place.svg">
     </div>
+
+    
+    <!-- Всплывающее окно -->
+    <!-- <div id="popup" style="display: none;">
+      <img id="popup_img" src="img/popup_manifest.svg" onclick="closePopup()">
+    </div> -->
+
+    <!-- Всплывающее окно -->
+    <div id="popup" style="display: none;" onclick="closePopup()">
+      <!-- <span class="close2">&times;</span> -->
+      <p id="txt_for_popup">Перед Вами манифест фестиваля музыки&nbsp;из&nbsp;8-битных&nbsp;игр GAME BEAT. В&nbsp;манифесте подробно описаны принципы создания 
+        пространства мероприятия, а&nbsp;также концепция создания многофункциональных предметов 
+        интерьера из&nbsp;букв шрифта проекта.</p>
+    </div>
+
+    
+    <script>
+      function openPopup() {
+          document.getElementById("popup").style.display = "block";
+      }
+
+      function closePopup() {
+          document.getElementById("popup").style.display = "none";
+      }
+    </script>
+
 
     <main class="carousel-container">
       <div class="carousel">
